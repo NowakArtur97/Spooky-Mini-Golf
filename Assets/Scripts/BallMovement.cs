@@ -19,8 +19,8 @@ public class BallMovement : MonoBehaviour
 
     private void Awake()
     {
-        _myRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
-        _myLineRenderer = gameObject.GetComponent<LineRenderer>();
+        _myRigidbody2D = gameObject.GetComponentInChildren<Rigidbody2D>();
+        _myLineRenderer = gameObject.GetComponentInChildren<LineRenderer>();
     }
 
     private void Update()
