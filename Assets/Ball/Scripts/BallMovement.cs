@@ -10,7 +10,6 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private float _minDistanceToDrag = 0.5f;
     [SerializeField] private float _maxPower = 10.0f;
     [SerializeField] private float _power = 2.0f;
-    [SerializeField] private float _maxGoalSpeed = 2.0f;
 
     private Rigidbody2D _myRigidbody2D;
     private LineRendererHandler _lineRendererHandler;
@@ -79,6 +78,15 @@ public class BallMovement : MonoBehaviour
         Vector2 direction = GetDirection(position);
 
         _myRigidbody2D.velocity = Vector2.ClampMagnitude(direction * _power, _maxPower);
+    }
+
+    public float GetVelocityMagnitude() => _myRigidbody2D.velocity.magnitude;
+
+    public void StopMovement()
+    {
+        _myRigidbody2D.velocity = Vector2.zero;
+
+        gameObject.SetActive(false);
     }
 
     private Vector2 GetDirection(Vector2 position) => (Vector2)transform.position - position;
