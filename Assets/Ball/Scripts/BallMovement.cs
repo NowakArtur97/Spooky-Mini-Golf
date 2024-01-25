@@ -13,14 +13,14 @@ public class BallMovement : MonoBehaviour
     [SerializeField] private float _maxGoalSpeed = 2.0f;
 
     private Rigidbody2D _myRigidbody2D;
-    private LineRenderer _myLineRenderer;
+    private LineRendererHandler _lineRendererHandler;
 
     private bool _isDraging;
 
     private void Awake()
     {
         _myRigidbody2D = gameObject.GetComponentInChildren<Rigidbody2D>();
-        _myLineRenderer = gameObject.GetComponentInChildren<LineRenderer>();
+        _lineRendererHandler = gameObject.GetComponentInChildren<LineRendererHandler>();
     }
 
     private void Update()
@@ -55,23 +55,21 @@ public class BallMovement : MonoBehaviour
     private void DragStart()
     {
         _isDraging = true;
-        _myLineRenderer.positionCount = 2;
+        _lineRendererHandler.StartRendering();
     }
 
     private void DragChange(Vector2 position)
     {
         Vector2 direction = GetDirection(position);
 
-        _myLineRenderer.SetPosition(0, transform.position);
-        _myLineRenderer.SetPosition(1, (Vector2)transform.position +
-            Vector2.ClampMagnitude((direction * _power) / 2, _maxPower / 2));
+        _lineRendererHandler.Render(direction, transform.position, _power, _maxPower);
     }
 
     private void DragRelease(Vector2 position)
     {
         float distance = Vector2.Distance(transform.position, position);
         _isDraging = false;
-        _myLineRenderer.positionCount = 0;
+        _lineRendererHandler.StopRendering();
 
         if (distance < _minSpeedToRelease)
         {

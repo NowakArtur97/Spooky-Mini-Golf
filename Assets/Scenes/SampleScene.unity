@@ -277,8 +277,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1462814891
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 1095360601}
   - component: {fileID: 1095360602}
   m_Layer: 0
-  m_Name: Rigidbody
+  m_Name: Collider 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _minSpeedToMove: 0.2
-  _minSpeedToRelease: 1
+  _minSpeedToRelease: 0.2
   _minDistanceToDrag: 0.1
   _maxPower: 10
   _power: 2
@@ -423,6 +423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1833064790}
+  - component: {fileID: 1833064792}
   - component: {fileID: 1833064791}
   m_Layer: 0
   m_Name: Line Renderer
@@ -552,6 +553,18 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1833064792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833064789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37917678d672bd14d8baea750fadc743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2039163471
 GameObject:
   m_ObjectHideFlags: 0
