@@ -14,7 +14,7 @@ TagManager:
   - UI
   - Ball
   - Hole
-  - 
+  - Fence
   - 
   - 
   - 
@@ -44,6 +44,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2050308737
+    locked: 0
+  - name: Fence
+    uniqueID: 1412938657
     locked: 0
   - name: Hole
     uniqueID: 431621367
