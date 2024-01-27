@@ -48,6 +48,9 @@ TagManager:
   - name: Fence
     uniqueID: 1412938657
     locked: 0
+  - name: Tobstone
+    uniqueID: 1747185421
+    locked: 0
   - name: Hole
     uniqueID: 431621367
     locked: 0
