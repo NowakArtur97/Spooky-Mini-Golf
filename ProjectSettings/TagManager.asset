@@ -45,6 +45,9 @@ TagManager:
   - name: Ground
     uniqueID: 2050308737
     locked: 0
+  - name: Stairs
+    uniqueID: 3858676255
+    locked: 0
   - name: Fence
     uniqueID: 1412938657
     locked: 0
