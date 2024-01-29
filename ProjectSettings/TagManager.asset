@@ -51,9 +51,3 @@ TagManager:
   - name: Environment
     uniqueID: 1747185421
     locked: 0
-  - name: Hole
-    uniqueID: 431621367
-    locked: 0
-  - name: Ball
-    uniqueID: 1462814891
-    locked: 0
