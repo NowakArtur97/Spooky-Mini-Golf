@@ -120,7 +120,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -145,7 +145,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -170,7 +170,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -207,7 +207,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -244,7 +244,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -269,7 +269,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -294,7 +294,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -321,7 +321,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 48
-        y: 0
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -343,6 +343,84 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Stairs_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 7}
+        - {x: -4, y: 8}
+        - {x: -5, y: 8}
+        - {x: -5, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 5}
+        - {x: 2, y: 5}
+        - {x: 2, y: 4}
+        - {x: 5, y: 4}
+        - {x: 5, y: 3}
+        - {x: 8, y: 3}
+        - {x: 8, y: 4}
+        - {x: 5, y: 4}
+        - {x: 5, y: 5}
+        - {x: 2, y: 5}
+        - {x: 2, y: 6}
+        - {x: -1, y: 6}
+        - {x: -1, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51d0e3fd636cc348853a614f7767a49
+      internalID: 1936671267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 7}
+        - {x: 1, y: 7}
+        - {x: 1, y: 6}
+        - {x: -2, y: 6}
+        - {x: -2, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: 4}
+        - {x: -8, y: 4}
+        - {x: -8, y: 3}
+        - {x: -5, y: 3}
+        - {x: -5, y: 4}
+        - {x: -2, y: 4}
+        - {x: -2, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 5, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e3ecba03ef0dc41a2505c382863853
+      internalID: 1513421726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -356,8 +434,10 @@ TextureImporter:
     nameFileIdTable:
       Stairs_4: -1895687312
       Stairs_3: 386391522
+      Stairs_8: 1936671267
       Stairs_2: -865616138
       Stairs_1: 45880500
+      Stairs_9: 1513421726
       Stairs_0: -466372534
       Stairs_6: 1553913454
       Stairs_7: 383613818
