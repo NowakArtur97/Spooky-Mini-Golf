@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 5113
+  controlID: 13374
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 5114
+  controlID: 13375
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 5115
+  controlID: 13376
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,8 +187,8 @@ MonoBehaviour:
     y: 0
     width: 379
     height: 573
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -410,7 +410,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -526,9 +526,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.0893397, y: 4.4037795, z: 0.05176639}
+    m_Target: {x: -8.310874, y: 7.2223077, z: 0.10479061}
     speed: 2
-    m_Value: {x: -4.0893397, y: 4.4037795, z: 0.05176639}
+    m_Value: {x: -8.310874, y: 7.2223077, z: 0.10479061}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -579,9 +579,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 8.489923
+    m_Target: 3.4909983
     speed: 2
-    m_Value: 8.489923
+    m_Value: 3.4909983
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -763,21 +763,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Environment/Stairs
+    - Assets/Environment/Ground
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Environment/Stairs
+  - Assets/Environment/Ground
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Spooky-Mini-Golf
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 06620000
-    m_LastClickedID: 25094
+    m_SelectedIDs: 04620000
+    m_LastClickedID: 25092
     m_ExpandedIDs: 00000000786100007a6100007c610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -831,8 +831,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 725e0000
-    m_LastClickedInstanceID: 24178
+    m_SelectedInstanceIDs: 10d7ffff
+    m_LastClickedInstanceID: -10480
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000d824000068620000988c0000
     m_RenameOverlay:
@@ -909,8 +909,8 @@ MonoBehaviour:
     y: 0
     width: 387
     height: 948
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -950,7 +950,7 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 24178
+  m_LastInspectedObjectInstanceID: -10480
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
