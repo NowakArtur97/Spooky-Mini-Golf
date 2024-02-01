@@ -4054,7 +4054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1444723021}
   m_Layer: 0
-  m_Name: Hand_0
+  m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4236,6 +4236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1900865036}
+  - component: {fileID: 1900865039}
   - component: {fileID: 1900865037}
   - component: {fileID: 1900865038}
   m_Layer: 0
@@ -4332,6 +4333,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1900865039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900865035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1bed100ce9041b4691a67edeba1f5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hidenTime: 1
+  _idleTime: 3
 --- !u!1 &2039163471
 GameObject:
   m_ObjectHideFlags: 0
