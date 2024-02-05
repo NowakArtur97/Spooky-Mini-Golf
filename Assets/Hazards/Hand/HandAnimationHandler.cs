@@ -11,11 +11,11 @@ public class HandAnimationHandler : MonoBehaviour
 
     private void Awake() => _myAnimator = GetComponent<Animator>();
 
-    private void Start() => StartCoroutine(Wait(_hidenTime, "MoveUp"));
+    private void Start() => StartCoroutine(Wait(_hidenTime, "moveUp"));
 
-    public void TriggerHiddenState() => StartCoroutine(Wait(_hidenTime, "MoveUp"));
+    public void TriggerHiddenState() => StartCoroutine(Wait(_hidenTime, "moveUp"));
 
-    public void TriggerIdleState() => StartCoroutine(Wait(_idleTime, "MoveDown"));
+    public void TriggerIdleState() => StartCoroutine(Wait(_idleTime, "moveDown"));
 
     private IEnumerator Wait(float waitTime, string triggerName)
     {
