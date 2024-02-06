@@ -10,7 +10,7 @@ public class GraveHole : MonoBehaviour
 
         if (ball.tag == BALL_TAG)
         {
-            ball.GetComponent<BallMovement>()?.StopMovement();
+            ball.GetComponent<BallMovement>()?.StartShrinking();
         }
     }
 }

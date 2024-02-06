@@ -4,17 +4,22 @@ public class BallMovement : MonoBehaviour
 {
     private const int RIGHT_MOUSE_BUTTON = 0;
 
-    [Header("Attributes")]
+    [Header("Movement")]
     [SerializeField] private float _minSpeedToMove = 0.2f;
     [SerializeField] private float _minSpeedToRelease = 1.0f;
     [SerializeField] private float _minDistanceToDrag = 0.5f;
     [SerializeField] private float _maxPower = 10.0f;
     [SerializeField] private float _power = 2.0f;
 
+    [Header("Shrinking")]
+    [SerializeField] private float _minSize = 0.2f;
+    [SerializeField] private float _shrinkingSpeed = 2.0f;
+
     private Rigidbody2D _myRigidbody2D;
     private LineRendererHandler _lineRendererHandler;
 
     private bool _isDraging;
+    private bool _isInHole;
 
     private void Awake()
     {
@@ -27,6 +32,11 @@ public class BallMovement : MonoBehaviour
         if (IsReady())
         {
             HandlePlayerInput();
+        }
+
+        if (_isInHole)
+        {
+            ShrinkBall();
         }
     }
 
@@ -82,11 +92,20 @@ public class BallMovement : MonoBehaviour
 
     public float GetVelocityMagnitude() => _myRigidbody2D.velocity.magnitude;
 
-    public void StopMovement()
-    {
-        _myRigidbody2D.velocity = Vector2.zero;
+    public void StartShrinking() => _isInHole = true;
 
-        gameObject.SetActive(false);
+    private void ShrinkBall()
+    {
+        if (transform.localScale.y > _minSize)
+        {
+            transform.localScale = new Vector3(transform.localScale.x - Time.deltaTime * _shrinkingSpeed,
+                transform.localScale.y - Time.deltaTime * _shrinkingSpeed, transform.localScale.z);
+        }
+        else
+        {
+            _myRigidbody2D.velocity = Vector2.zero;
+            gameObject.SetActive(false);
+        }
     }
 
     private Vector2 GetDirection(Vector2 position) => (Vector2)transform.position - position;

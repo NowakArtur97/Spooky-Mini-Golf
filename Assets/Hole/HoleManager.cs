@@ -41,7 +41,7 @@ public class HoleManager : MonoBehaviour
         {
             _inHole = true;
 
-            ballMovement.StopMovement();
+            ballMovement.StartShrinking();
         }
     }
 }
