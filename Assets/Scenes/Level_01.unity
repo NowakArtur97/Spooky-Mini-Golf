@@ -218,9 +218,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7607110057380116960, guid: 65e44da295ca9744b974dcfa1d32c4fc, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7607110057380116962, guid: 65e44da295ca9744b974dcfa1d32c4fc, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7607110057380116962, guid: 65e44da295ca9744b974dcfa1d32c4fc, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7607110057380116962, guid: 65e44da295ca9744b974dcfa1d32c4fc, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.size
