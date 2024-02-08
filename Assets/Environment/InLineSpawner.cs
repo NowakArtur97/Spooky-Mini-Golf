@@ -23,7 +23,17 @@ public class InLineSpawner : MonoBehaviour
 
     private Vector2 GetPosition(int index)
     {
-        Vector2 offset = new Vector2(_maxHorizontalOffset * index, index % 2 == 0 ? _maxVecrticalOffset : 0);
+        Vector2 offset;
+
+        if (_spawnDirection == Vector2.right)
+        {
+            offset = new Vector2(_maxHorizontalOffset * index, index % 2 == 0 ? _maxVecrticalOffset : 0);
+        }
+        else
+        {
+            offset = new Vector2(index % 2 == 0 ? _maxHorizontalOffset : 0, _maxVecrticalOffset * (-index / 2));
+        }
+
         return _startPosition + offset;
     }
 }
