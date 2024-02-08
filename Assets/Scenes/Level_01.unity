@@ -253,7 +253,7 @@ MonoBehaviour:
   _numberOfPrefabsToSpawn: 40
   _spawnDirection: {x: 1, y: 0}
   _maxHorizontalOffset: 0.5
-  _maxVecrticalOffset: 0.5
+  _maxVecrticalOffset: 0.75
 --- !u!1001 &543568446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   _numberOfPrefabsToSpawn: 40
   _spawnDirection: {x: 1, y: 0}
   _maxHorizontalOffset: 0.5
-  _maxVecrticalOffset: 0.5
+  _maxVecrticalOffset: 0.75
 --- !u!1001 &419507932771306769
 PrefabInstance:
   m_ObjectHideFlags: 0
